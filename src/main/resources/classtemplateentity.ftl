@@ -15,7 +15,7 @@ public class ${className}Entity {
 public static final String FIND_ALL = "${className}Entity.find_all";
 
 <#list properties as p>
-    @Column(name = "${p.propertyNameOriginal}")
+    @Column(name = "${p.propertyCapitalName}")
     private ${p.propertyType} ${p.propertyName};
 
 </#list>

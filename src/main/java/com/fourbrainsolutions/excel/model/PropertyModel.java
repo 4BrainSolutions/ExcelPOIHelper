@@ -11,6 +11,10 @@ public class PropertyModel implements Serializable {
 	private String propertyName;
 	private String propertyType;
 
+	public String getPropertyCapitalName() {
+		return propertyName.toUpperCase();
+	}
+
 	public String getPropertyMethodName() {
 		char[] chars = propertyName.toCharArray();
 		char c = chars[0];
