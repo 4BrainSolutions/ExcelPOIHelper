@@ -7,12 +7,11 @@ import java.io.Serializable;
  */
 public class PropertyModel implements Serializable {
 	private String propertyNameOriginal;
-	private String propertyMethodName;
 	private String propertyName;
 	private String propertyType;
 
 	public String getPropertyCapitalName() {
-		return propertyName.toUpperCase();
+		return propertyNameOriginal.toUpperCase();
 	}
 
 	public String getPropertyMethodName() {
